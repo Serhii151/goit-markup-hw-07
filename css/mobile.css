@@ -1,0 +1,42 @@
+@media screen and (min-width: 480px ) {
+    .container{
+        max-width: 448px;
+    }
+
+    .mob-menu-tell {
+        font-size: 36px;
+        line-height: calc(40 / 36);
+    }
+        
+
+    .mob-menu-soc-list {
+        gap: 56px;
+    }
+
+    .hero-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .modal {
+        width: 408px;
+        padding: 24px;
+        padding-top: 72px;
+    }
+    .modal-close-btn {
+        top: 24px;
+        right: 24px;
+    }
+    .modal-title{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .modal-field {
+        margin-bottom: 16px;
+    }
+    .checkbox-text::before {
+        height: 16px;
+    }
+
+    
+}
