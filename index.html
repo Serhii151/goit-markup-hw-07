@@ -44,23 +44,23 @@
         </nav>
         <address class="address">
           <ul class="address-list list">
-            <li class="address-item">
+            <li class="address-tel">
               <a class="address-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="address-item">
+            <li class="address-meil">
               <a class="address-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
-          <button type="button" class="open-mob-menu js-open-menu">
-            <svg class="mob-menu-icon" Width="32" height="22">
-              <use href="./images/icons.svg#icon-mob-menu"></use>
-            </svg>
-          </button>
         </address>
+        <button type="button" class="open-mob-menu js-open-menu">
+          <svg class="mob-menu-icon" Width="32" height="22">
+            <use href="./images/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
       </div>
       <div class="mob-menu js-menu-container" id="mobile-menu">
         <div class="mob-menu-container">
@@ -78,7 +78,7 @@
               </button>
               <ul class="mob-menu-list list">
                 <li class="mob-menu-item active">
-                  <a class="mob-menu-link link active color" href="./index.html"
+                  <a class="mob-menu-link link color" href="./index.html"
                     >Studio</a
                   >
                 </li>
@@ -240,7 +240,7 @@
         </div>
       </section>
       <section class="aside">
-        <div class="container-team">
+        <div class="container container-team">
           <h2 class="aside-title">Our Team</h2>
           <ul class="aside-list list">
             <li class="aside-item">
@@ -419,7 +419,7 @@
         </div>
       </section>
       <section class="customers">
-        <div class="container">
+        <div class="container cust-cont">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
@@ -499,7 +499,7 @@
             </p>
           </div>
           <div class="footer-soc">
-            <h4 class="footer-icon-link">Social media</h4>
+            <b class="footer-icon-link">Social media</b>
             <ul class="footer-soc-list list">
               <li class="footer-soc-item">
                 <a href="" class="footer-soc-link link">
@@ -621,9 +621,11 @@
               class="input-checkbox visually-hidden"
             />
             <label for="accept" class="checkbox-text"
-              >I accept the terms and conditions of the&nbsp;
-              <a href="" class="modal-privacy-policy">Privacy Policy</a></label
-            >
+              ><span
+                >I accept the terms and conditions of the&nbsp;
+                <a href="" class="modal-privacy-policy">Privacy Policy</a></span
+              >
+            </label>
           </div>
           <button type="submit" class="modal-send-btn">Send</button>
         </form>

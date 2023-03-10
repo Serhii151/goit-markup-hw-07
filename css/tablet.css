@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
     .container {
-            max-width: 767px;
+            width: 767px;
         }
     
         .hero-title {
@@ -27,15 +27,14 @@
 
         .hero {
             background-image: var(--l-hero-gra),
-            url(../images/tab-bg.jpg);
+                url(../images/people-office.jpg);
         }
-
+        
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             .hero {
-                background-image: var(--l-hero-gra),
-                    url(../images/tab-bg2x.jpg);
+                background-image: var(--l-hero-gra), url(../images/people-office2x.jpg);
             }
         }
     
@@ -57,10 +56,16 @@
             margin-bottom: 0px;
             width: calc((100% - 24px) / 2);
         }
+        .features-title{
+            text-align: left;
+        }
     
-        .customers {
-            padding-left: 108px;
-            padding-right: 108px;
+
+        .cust-cont {
+            max-width: 552px;
+        }
+        .customers-list{
+            gap: 72px 24px;
         }
     
         .customers-item {
@@ -68,19 +73,29 @@
             /* width: 190px; */
             height: 88px;
         }
-    
+
+        .aside {
+            padding-top: 96px;
+            padding-bottom: 96px;
+        }
+        .aside-list {
+            gap: 64px 24px;
+        }
         .container-team {
-            max-width: 767px;
+            max-width: 582px;
+            padding: 0 15px;
             margin-left: auto;
             margin-right: auto;
         }
-    
+
+        .footer-container {
+            max-width: 582px;
+        }
         .footer-tab-up {
             display: flex;
             justify-content: flex-start;
             gap: 24px;
             margin-bottom: 72px;
-            margin-left: 108px;
         }
     
         .footer-logo-text {
@@ -104,7 +119,6 @@
     
         .footer-e-mail-input {
             text-align: left;
-            margin-left: 108px;
         }
     
         .footer-subscribe {

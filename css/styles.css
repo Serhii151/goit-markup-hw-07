@@ -132,9 +132,6 @@ body {
     transition: color var(--hover-transition);
 }
 
-.color {
-    color: var(--active-btn-color);
-}
 
 .nav-link::after {
     content: '';
@@ -198,7 +195,9 @@ body {
 
 /*----------ADDRESS-------------*/
 
-
+.address-tel {
+    margin-bottom: 4px;
+}
 
 .address-link {
     display: block;
@@ -230,12 +229,11 @@ body {
 
 
 .open-mob-menu {
-    position: absolute;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 24px;
-    right: 24px;
+    
     padding: 0;
     border: none;
     background-color: transparent;
@@ -305,7 +303,6 @@ body {
     margin-bottom: 24px;
 }
 
-.active {}
 
 .mob-menu-link {
     font-weight: 700;
@@ -316,6 +313,10 @@ body {
     color: #2E2F42;
 }
 
+.color {
+    color: var(--active-btn-color);
+}
+
 .mob-menu-link:hover,
 .mob-menu-link:focus {
     color: var(--active-btn-color);
@@ -324,9 +325,13 @@ body {
 
 .mob-menu-address {}
 
-.mob-menu-address-list {}
+.mob-menu-address-list {
+    margin-bottom: 48px;
+}
 
 .mob-menu-address-item {}
+
+
 
 .mob-menu-tell {
     font-style: normal;
@@ -334,7 +339,7 @@ body {
     font-weight: 600;
     font-size: 24px;
     line-height: calc(31 / 24);
-    color: #434455;
+    color: var(--akcent-btn-color);
     margin-bottom: 40px;
 }
 
@@ -351,7 +356,6 @@ body {
     font-size: 20px;
     line-height: calc(24 / 20);
     color: #434455;
-    margin-bottom: 48px;
     letter-spacing: 0.02em;
 }
 
@@ -435,7 +439,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 16px 32px;
-    margin-top: 40px;
+    margin-top: 72px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -461,7 +465,7 @@ body {
     
 }
 
-.features-item {
+.features-item:not(:last-child) {
     margin-bottom: 72px;
 
 }
@@ -482,7 +486,6 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-    margin-top: 8px;
 }
 
 .features-icons-list {
@@ -531,7 +534,12 @@ body {
 
 .aside {
     background: #F4F4FD;
-    padding: 85px 30px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.container-team {
+    width: 294px;
 }
 
 .aside-item {
@@ -541,7 +549,7 @@ body {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-    margin-bottom: 30px;
+    
 }
 
 
@@ -555,7 +563,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 72px 16px;
+    gap: 72px 24px;
 }
 
 
@@ -621,16 +629,18 @@ body {
 
 /*----------Customers-------------*/
 .customers {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     
 }
 
-
+.cust-cont {
+    width: 294px;
+}
 
 .customers-title {
     font-size: 36px;
-    line-height: 40px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -643,7 +653,7 @@ body {
     justify-content: center;
     gap: 72px 16px;
     flex-wrap: wrap;
-    margin-bottom: 96px;
+    
 }
 
 .customers-item {
@@ -705,14 +715,15 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #E7E9FC;
+    text-align: left;
     letter-spacing: 0.02em;
     margin-top: 16px;
 }
 
 .footer {
     background: #2E2F42;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .footer-logo-text {
@@ -766,6 +777,10 @@ body {
     /*display: flex;*/
 }
 
+.footer-tab-up {
+    margin-bottom: 72px;
+}
+
 .footer-soc-link {
     width: 100%;
     height: 100%;
@@ -791,7 +806,6 @@ body {
 
 .footer-e-mail-input {
     text-align: center;
-    margin-top: 70px;
 }
 
 
@@ -985,6 +999,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
+    overflow-y: auto;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity var(--hover-transition), visibility var(--hover-transition);
 }
@@ -1001,7 +1016,6 @@ body {
     min-width: 300px;
     min-height: 576px;
     left: 50%;
-    top: 50%;
     padding: 15px;
     padding-top: 55px;
     background-color: #FCFCFC;
@@ -1009,9 +1023,12 @@ body {
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transform: translate(-50%, -50%) scaley(1);
+    transform: translate(-50%) scaley(1);
     transition: transform var(--hover-transition);
 }
+top: 50%;
+transform: translate(-50%, -50%) scaley(1);
+    
 
 .bacdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scaley(0);
@@ -1144,10 +1161,11 @@ body {
 .checkbox-text::before {
     content: '';
     width: 16px;
-    height: 14px;
+    height: 16px;
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
     margin-right: 8px;
+    flex-shrink: 0;
     transition: background-color var(--hover-transition);
 }
 

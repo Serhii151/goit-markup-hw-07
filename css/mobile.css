@@ -1,6 +1,6 @@
 @media screen and (min-width: 480px ) {
     .container{
-        max-width: 448px;
+        min-width: 448px;
     }
 
     .mob-menu-tell {
@@ -13,12 +13,29 @@
         gap: 56px;
     }
 
+    .hero {
+        background-image: var(--l-hero-gra),
+            url(../images/tab-bg.jpg);
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: var(--l-hero-gra),
+                url(../images/tab-bg2x.jpg);
+        }
+    }
+
     .hero-title {
         max-width: 318px;
         /*max-height: 80px;*/
         font-weight: 700;
         font-size: 34px;
         line-height: calc(40 /34);
+    }
+    .cust-cont {
+        min-width: 396px;
     }
     .modal {
         width: 408px;
@@ -39,6 +56,7 @@
     .checkbox-text::before {
         height: 16px;
     }
+    
 
     
 }
