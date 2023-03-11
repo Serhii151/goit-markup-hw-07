@@ -2,6 +2,9 @@
     .container {
         min-width: 1158px;
     }
+    .logo {
+        margin-right: 76px;
+    }
     .address-list {
         gap: 40px;
         display: flex;
@@ -42,6 +45,9 @@
         font-size: 20px;
         line-height: 1.2;
         text-align: left;
+    }
+    .features-text {
+        font-weight: 400;
     }
     
     .content {

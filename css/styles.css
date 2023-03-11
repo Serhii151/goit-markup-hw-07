@@ -57,6 +57,7 @@ ul {
 
 .container {
     width: 100%;
+    max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -113,7 +114,6 @@ body {
     color: #2E2F42;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
 }
 
 /*----------NAV-------------*/
@@ -467,7 +467,6 @@ body {
 
 .features-item:not(:last-child) {
     margin-bottom: 72px;
-
 }
 
 .features-title {
@@ -634,9 +633,6 @@ body {
     
 }
 
-.cust-cont {
-    width: 294px;
-}
 
 .customers-title {
     font-size: 36px;
@@ -736,7 +732,7 @@ body {
 }
 
 .footer-soc {
-    display: block;
+    display: flex;
     flex-direction: column;
     width: 208px;
     height: 80px;

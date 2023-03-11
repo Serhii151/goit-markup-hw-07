@@ -1,8 +1,10 @@
 @media screen and (min-width: 768px) {
     .container {
-            width: 767px;
+            max-width: 767px;
         }
-    
+        .logo {
+            margin-right: 120px;
+        }
         .hero-title {
             max-width: 496px;
             font-weight: 700;
@@ -52,7 +54,7 @@
             column-gap: 24px;
         }
     
-        .features-item {
+        .features-list > .features-item {
             margin-bottom: 0px;
             width: calc((100% - 24px) / 2);
         }
@@ -62,7 +64,7 @@
     
 
         .cust-cont {
-            max-width: 552px;
+            max-width: 582px;
         }
         .customers-list{
             gap: 72px 24px;
